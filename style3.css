@@ -1,0 +1,140 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+img {
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 15px 15px 10px grey;
+  transition: transform 0.5s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 头部样式 */
+header {
+  /* background-color: #333; */
+  color: rgb(255, 255, 255);
+  /* padding: 20px 0; */
+  text-align: center;
+  background-image: url("./images/datacity.jpg");
+  background-size: 100% 200px;
+}
+
+.a1 {
+  width: 100px;
+  background-color: rgb(42, 151, 182);
+  border-radius: 10px;
+  transition: background-color 0.5s ease-in 0.2s;
+}
+.a1:hover {
+  background-color: #0697f8;
+}
+header h1 {
+  margin: 0;
+  float: left;
+  letter-spacing: 10px;
+  font-size: 35px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  /* margin: 0; */
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e4df95;
+}
+
+/* 主体内容样式 */
+.hero {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.articles {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.img1 {
+  display: flex;
+  justify-content: center;
+}
+.articles h2 {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.articles ul li {
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+
+.articles ul li a {
+  color: #4caf50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.articles ul li a:hover {
+  color: #8c6f12;
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
