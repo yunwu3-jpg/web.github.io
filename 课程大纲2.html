@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前端学习课程大纲</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+      }
+
+      header nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      header nav ul li {
+        display: inline;
+        margin: 0 1rem;
+      }
+
+      header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      header nav ul li a:hover {
+        color: #d39090;
+      }
+      #course-content {
+        padding: 1rem;
+      }
+
+      .content-section {
+        margin-bottom: 1rem;
+      }
+
+      .hidden {
+        display: none;
+      }
+      p {
+        text-indent: 2em;
+      }
+      .c5 {
+        height: 570px;
+        width: 65%;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>前端学习课程大纲</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" onclick="showSection('introduction')">课程介绍</a>
+          </li>
+          <li><a href="#" onclick="showSection('html')">HTML</a></li>
+          <li><a href="#" onclick="showSection('css')">CSS</a></li>
+          <li>
+            <a href="#" onclick="showSection('javascript')">JavaScript</a>
+          </li>
+          <li><a href="#" onclick="showSection('frameworks')">前端框架</a></li>
+          <li><a href="#" onclick="showSection('tools')">开发工具</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="c5">
+      <main id="course-content">
+        <section id="introduction" class="content-section">
+          <h2>课程介绍</h2>
+          <p>欢迎来到前端学习课程大纲，这里将帮助你掌握前端开发的基础。</p>
+          <p>
+            前端学习课程是踏入数字世界创意与功能实现的第一步。本课程旨在全面覆盖前端开发的基础与进阶知识，从构建网页的基石——HTML与CSS开始，你将学会如何结构化内容、设计布局以及美化页面。随后，深入JavaScript的世界，掌握这门动态网页编程语言的精髓，实现页面交互与动态效果。
+            课程不仅包含理论知识，更强调实践操作。通过项目实战，你将亲手打造响应式网页、交互式表单、动态内容更新等，将所学知识转化为实际技能。此外，还将介绍前端框架如React、Vue.js等，以及版本控制工具Git，助你提升开发效率与团队协作能力。
+            无论你是零基础的编程爱好者，还是希望转型前端的开发人员，本课程都将为你铺设一条清晰的学习路径，引领你迈向前端开发的专业领域，开启数字创造之旅。
+          </p>
+        </section>
+        <section id="html" class="content-section hidden">
+          <h2>HTML</h2>
+          <ul>
+            <li>HTML基础</li>
+            <li>标签与属性</li>
+            <li>表单元素</li>
+            <li>语义化标签</li>
+          </ul>
+        </section>
+        <section id="css" class="content-section hidden">
+          <h2>CSS</h2>
+          <ul>
+            <li>CSS选择器</li>
+            <li>盒模型</li>
+            <li>布局方式</li>
+            <li>CSS3新特性</li>
+          </ul>
+        </section>
+        <section id="javascript" class="content-section hidden">
+          <h2>JavaScript</h2>
+          <ul>
+            <li>JavaScript基础</li>
+            <li>DOM操作</li>
+            <li>事件处理</li>
+            <li>ES6新特性</li>
+          </ul>
+        </section>
+        <section id="frameworks" class="content-section hidden">
+          <h2>前端框架</h2>
+          <ul>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>Angular</li>
+          </ul>
+        </section>
+        <section id="tools" class="content-section hidden">
+          <h2>开发工具</h2>
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>Git与GitHub</li>
+            <li>浏览器开发者工具</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script>
+      function showSection(sectionId) {
+        // 获取所有内容部分
+        const sections = document.querySelectorAll(".content-section");
+
+        // 隐藏所有内容部分
+        sections.forEach((section) => {
+          section.classList.add("hidden");
+        });
+
+        // 显示指定的内容部分
+        const targetSection = document.getElementById(sectionId);
+        targetSection.classList.remove("hidden");
+      }
+
+      // 默认显示课程介绍部分
+      window.onload = function () {
+        showSection("introduction");
+      };
+    </script>
+  </body>
+</html>

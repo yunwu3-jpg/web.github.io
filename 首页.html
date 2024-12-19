@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>如何学习前端</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        background-color: #4e9ff6;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 1em;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 2em;
+      }
+
+      section {
+        margin-bottom: 2em;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #4a98ed;
+      }
+
+      .resource ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .resource ul li {
+        background: url("icon-book.png") no-repeat left center;
+        padding-left: 2em;
+        margin-bottom: 0.5em;
+      }
+
+      a {
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #0056b3;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+      }
+      .c3 {
+        width: 80%;
+        margin: 0 auto;
+      }
+      footer {
+        background-color: #4e9ff6;
+        height: 50px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      main {
+        padding-left: 50px;
+      }
+      #syllabus ul {
+        list-style: none;
+        color: black;
+        line-height: 50px;
+      }
+      #syllabus ul li a {
+        text-decoration: none;
+        color: rgb(209, 123, 164);
+      }
+      #syllabus ul li a:hover {
+        color: #4e9ff6;
+      }
+      .c4 {
+        height: 250px;
+        padding: 20px;
+      }
+      .c4 img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+      }
+      .c4 img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="c3">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#syllabus">课程大纲</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="welcome">
+          <h1>欢迎来到前端学习之旅</h1>
+
+          <div class="c4">
+            <img
+              src="./images/背景.png"
+              alt=""
+              style="
+                height: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+                float: left;
+                padding-right: 10px;
+              "
+            />
+            <p style="text-align: center; font-size: 1.2rem">
+              这里是您学习前端技术的起点。
+            </p>
+            <p style="text-indent: 2em">
+              前端是互联网开发中与用户直接交互的部分，主要负责网页或应用的界面设计、交互逻辑和用户体验。前端技术栈包括HTML、CSS和JavaScript等核心语言，以及React、Vue.js、Angular等现代前端框架。这些技术共同协作，使得网页能够动态展示内容、响应用户操作，并提供丰富的视觉和交互效果。前端开发者需具备良好的审美、设计能力和编程技巧，以确保网页的易用性、美观性和性能。随着移动互联网的普及，前端技术也在不断发展，以适应更多样化的设备和用户需求。
+            </p>
+          </div>
+        </section>
+        <section id="syllabus">
+          <h2>学习路径</h2>
+          <ul>
+            <li>
+              <a href="https://www.runoob.com/html/html-basic.html">HTML基础</a
+              >HTML是网页的基础语言，用于定义网页结构和内容。
+            </li>
+            <li>
+              <a href="https://www.runoob.com/css/css-tutorial.html">CSS样式</a
+              >CSS样式用于定义网页元素的布局、颜色和字体等外观。
+            </li>
+            <li>
+              <a href="https://www.runoob.com/js/js-tutorial.html"
+                >JavaScript编程</a
+              >JavaScript是网页开发的脚本语言，用于实现动态内容和交互。
+            </li>
+            <li>
+              <a
+                href="https://blog.csdn.net/qq_40999403/article/details/139501097"
+                >前端框架</a
+              >前端框架如React、Vue.js和Angular，简化DOM操作，提升开发效率与页面性能。
+            </li>
+          </ul>
+        </section>
+        <section id="resources">
+          <h2>资源推荐</h2>
+          <div class="resource">
+            <h3>书籍</h3>
+            <ul>
+              <li>《JavaScript高级程序设计》</li>
+              <li>《CSS权威指南》</li>
+            </ul>
+          </div>
+          <div class="resource">
+            <h3>在线课程</h3>
+            <ul>
+              <li>Coursera上的前端课程</li>
+              <li>Udemy上的JavaScript教程</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 前端学习. 版权所有.</p>
+      </footer>
+    </div>
+  </body>
+</html>
